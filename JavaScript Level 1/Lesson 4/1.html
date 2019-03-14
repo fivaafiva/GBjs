@@ -1,0 +1,21 @@
+<meta charset="utf-8">
+
+<script>
+	var num = +prompt('Введите число от 0 до 999');
+	console.log(numberRank(num));
+
+	//Фунция разбития числа на разряды 
+	function numberRank (num) {
+		var obj = {}
+		if (num < 0 || num >999 || isNaN(num)) {
+
+			alert('Введите корректное число!');
+			return obj;
+		}
+		 obj.sot = Math.floor(num / 100);
+		 obj.des = Math.floor(num % 100 / 10);
+		 obj.ed = num % 10;
+		 return obj;
+	}
+	
+</script>

@@ -1,0 +1,43 @@
+.container {
+  width: 944px;
+  margin: 0 auto;
+}
+
+table {
+  width: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-align: center;
+  border-collapse: collapse;
+}
+
+table .chess-footer, table .chess-header,
+table .chess-left-side, table .chess-right-side {
+  background: white;
+  color: black;
+  font-size: 30px;
+}
+
+table .chess-head-side, table .chess-right-side {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+table .chess-tr-body:nth-child(even) .chess-td-body:nth-child(odd) {
+  background: #a07b46;
+}
+
+table .chess-tr-body:nth-child(odd) .chess-td-body:nth-child(even) {
+  background: #a07b46;
+}
+
+table td {
+  height: 100px;
+  width: 10%;
+}
+
+table .chess-td-body {
+  background: #dec88e;
+  font-size: 60px;
+  border: 2px solid black;
+}

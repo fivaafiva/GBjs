@@ -1,0 +1,37 @@
+.container {
+  width: 944px;
+  margin: 0 auto;
+}
+table {
+  width: 100%;
+  box-sizing: border-box;
+  //@at-rootborder: 2px solid #000;
+  text-align: center;
+  border-collapse: collapse;
+  .chess-footer, .chess-header,
+  .chess-left-side, .chess-right-side {
+    background: white;
+    color: black;
+    font-size: 30px;
+  }
+  .chess-head-side, .chess-right-side {
+    transform: rotate(180deg);
+  }
+  .chess-tr-body:nth-child(even)  .chess-td-body:nth-child(odd) {
+    background: #a07b46;
+  }
+  .chess-tr-body:nth-child(odd) .chess-td-body:nth-child(even) {
+    background: #a07b46;
+  }
+  td {
+    height: 100px;
+    width: 10%;
+  }
+  .chess-td-body {
+    background: #dec88e;
+    font-size: 60px;
+    border: 2px solid black;
+  }
+
+}
+

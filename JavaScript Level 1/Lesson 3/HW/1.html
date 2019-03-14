@@ -1,0 +1,20 @@
+<meta charset="utf-8">
+
+<script>
+
+	var i=2;
+	top:
+	while (i<=100) {
+		i++;
+		var j = 2;
+		while (j < i) {
+
+			if ((i % j) == 0){
+				continue top;
+			}
+			j++;
+		}
+		document.write(i + '<br>');
+	}
+
+</script>

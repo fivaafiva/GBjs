@@ -1,0 +1,18 @@
+<meta charset="utf-8">
+
+<script>
+	function testNum (i=0) {
+		do {
+			if (i%2 == 0 && i != 0) {
+				document.write(i+' - четное число'+'<br>');
+			} else if (i==0) {
+				document.write(i+' - это ноль'+'<br>');
+			} else {
+				document.write(i+' - нечетное число'+'<br>');
+			}
+			i++;
+		} while (i<=10);
+	}
+
+testNum();
+</script>

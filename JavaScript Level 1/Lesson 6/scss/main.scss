@@ -1,0 +1,218 @@
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.carousel-container {
+    max-width: 100%;
+    position: relative;
+    margin:auto;
+
+    .fade {
+        display: block !important;
+        animation-name: fade;
+        animation-duration: 1.5s;
+        @keyframes fade {
+            from {opacity: .4;}
+            to {opacity: 1;}
+        }
+    }
+
+    .mySlides {
+        display: none;
+
+        img {
+            display: block;
+            width: 100%;
+        }
+
+        .carousel-number {
+            position: absolute;
+            top: 30px;
+            left: 49%;
+            color: #fafafa;
+            font-size: 45px;
+        }
+
+        .carousel-text {
+            position: absolute;
+            bottom: 50%; 
+            left: 50%;            
+            color:#fafafa;
+            font-size: 45px;
+            //padding: 8px 12px;
+        }
+    }
+
+    .preview, .next {
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        margin-top: -22px;
+        padding: 16px;
+        color: white;
+        font-weight: bold;
+        font-size: 18px;
+        transition: .6s ease;
+        border-radius: 0 3px 3px 0;
+        &:hover {
+            background: rgba(0, 0, 0, 0.8)
+        }
+      
+    }
+    .next {
+        right: 0;
+        border-radius: 3px 0 0 3px;
+    }
+    
+    .dot-container {
+        position: absolute;
+        bottom: 25px;
+        left: 45%;
+        .dot {
+            display: inline-block;
+            cursor: pointer;
+            height: 23px;
+            width: 23px;
+            margin: 0 2px;
+            background: #bbb;
+            border-radius: 50%;
+            transition: background-color .6s ease;
+            &:hover {
+                background: #717171;
+            }
+        }
+        .active {
+            background: #717171;
+        }
+    }
+
+}
+
+
+
+.cart-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+    width: 100%;
+    height: 173px;
+    background: #fafafa;
+    .cart-container-left-side {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        .cart-item {
+            display:flex;
+            flex-direction: column;
+            align-items: center;
+            box-shadow: 0 0 5px rgba(93, 90, 90, 0.29);
+            margin-left: 5px;
+            margin-top: 5px;
+            padding: 3px;
+            font-size: 20px;
+            .cart-item-price {
+                align-self: flex-end;
+                margin-right: 10px;
+           }
+        }
+    }
+    .cart-container-right-side {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        font-size: 30px;
+    }
+}
+
+.product-container {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.product-item {
+    width: 300px;
+    text-align: center;
+    margin: 0 auto;
+    border-bottom: 2px solid #F5F5F5;
+    background: white;
+    font-family: "Open Sans";
+    transition: .3s ease-in;
+
+    &:hover {
+        border-bottom: 2px solid #fc5a5a;
+    }
+
+    img {
+        display: block;
+        width: 100%;
+    }
+
+    &:hover .button {
+        background: #fc5a5a;
+    }
+}
+
+.product-list {
+    background: #fafafa;
+    padding: 15px 0;
+
+    h3 {
+        font-size: 18px;
+        font-weight: 400;
+        color: #444444;
+        margin: 0 0 10px 0;
+    }
+    a {
+        cursor: pointer;
+    }
+
+    .price {
+        font-size: 16px;
+        color: #fc5a5a;
+        display: block;
+        margin-bottom: 12px;
+    }
+
+    .button {
+        text-decoration: none;
+        display: inline-block;
+        padding: 0 12px;
+        background: #cccccc;
+        color: white;
+        text-transform: uppercase;
+        font-size: 12px;
+        line-height: 28px;
+        transition: .3s ease-in;
+    }
+}
+
+.container-gallery {
+    height: 825px;
+    margin-top: 50px;
+    padding-top: 15px;
+    background: #fafafa;
+    .small-images {
+        display: flex;
+        justify-content: space-evenly;
+        img {
+            border: 6px solid #cccccc;
+            transition: .3s ease-in;
+            &:hover {
+                border-color:  #fc5a5a;
+                cursor: pointer;
+            }
+        }
+    }
+    .large-images {
+        display: flex;
+        justify-content: center;
+        margin-top: 25px;
+        img {
+            //display: none;
+            border: 6px solid #cccccc;
+            width: 70%;
+            height:70%;
+        }
+    }
+}

@@ -1,0 +1,58 @@
+<meta charset="utf-8">
+
+<script>
+
+	alert ('Программа выполняет одно из арифметических операций между числами A и B,  и выводит результат в консоль');
+	var a = +prompt('Введите число A');
+	var b = +prompt('Введите число B');
+	var c = prompt('Введите знак арифметической операций (+,-,/,*)')
+	
+
+	//Функция вычисления разности
+	function raznost (x,y) {
+		return x - y;
+	}
+
+	//Функция вычисления суммы
+	function summa (x,y) {
+		return x + y;
+
+	}
+
+	//Функция вычисления произведения
+	function proizvedenie (x,y) {
+		return  x * y;
+	}
+
+	//Функция вычисления частного
+	function chastnoe (x,y) {
+		return  x / y;
+	}
+
+	//Функция арифметических операций
+	function mathOperation (arg1,arg2,operation) {
+		arg1 = a;
+		arg2 = b;
+		operation = c;
+		if (isNaN(arg1) || isNaN(arg2)) {
+			alert('Ошибка, введите число!');
+		}
+		else if (operation == '+' || operation == '-' || operation == '/' || operation == '*' ) {
+			switch (operation) {
+				case '+': return summa(arg1,arg2);
+				case '-': return raznost(arg1,arg2);
+				case '/': return chastnoe(arg1,arg2);
+				case '*': return proizvedenie(arg1,arg2);
+			}
+			
+		}
+		else {
+			alert('Ошибка, введите знак арифметической операции');
+		}
+		
+	}
+
+	console.log(mathOperation());
+
+
+</script>

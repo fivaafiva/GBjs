@@ -1,0 +1,24 @@
+<meta charset="utf-8">
+
+<script>
+
+var num = 2;
+while (num <= 100) {
+	if(isSimple(num)) {
+		document.write (num + '<br>');
+	}
+	num++;
+}
+
+function isSimple(num) {
+	var i =2;
+	while (i < num) {
+		if (num % i == 0) {
+			return false;
+		}
+		i++;
+	}
+	return true;
+}
+
+</script>
